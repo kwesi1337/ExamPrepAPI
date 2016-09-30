@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        <script src ="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src ="https://code.angularjs.org/1.5.0-rc.0/angular-route.min.js"></script>
+        <script src="app/app.js"></script>
+    </head>
+    <body>
+        <h1>{{ctrl.title}}</h1>
+        
+        <div> 
+            <div ng-view="ng-view"></div>
+            
+        </div>
+        
+    </body>
+</html>

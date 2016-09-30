@@ -1,0 +1,48 @@
+<h1>Details</h1>
+<div>
+    
+    
+    <h2>Number of cities{{ctrl.cities.length}}</h2>
+    
+    <div row>
+        
+        
+        <div class="col-md-9">
+            <table class="table">
+                
+                <thead>
+                    
+                    <tr>
+                        
+                        <td>Name</td>
+                        
+                        <td>District</td>
+                        
+                        <td>Population</td>
+                        
+                        
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    
+                    <tr ng-repeat="city in ctrl.cities">
+                        
+                        
+                        <td>{{city.name}}</td>
+                        <td>{{city.district}}</td>
+                        <td>{{city.population}}</td>
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <br><br><br>
+    
+    <a class="btn btn-info" href="#/all/">back</a>
+    
+    
+</div>

@@ -1,0 +1,43 @@
+<div>
+    
+    
+    <h2>Number of countries {{ctrl.countries.length}}</h2>
+    
+    
+    <input type="search" ng-model="carfilter" placeholder="Filter">
+    <div row ng-init="ctrl.getAllCountries()">
+        <div class="col-md-9">
+            <table class="table">
+                
+                <thead>
+                    
+                    <tr>
+                        
+                        <td>Code</td>
+                        
+                        <td>Name</td>
+                        
+                        <td>Continent</td>
+                        
+                        <td>Capital</td>
+                        <td>Details</td>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr ng-repeat="country in ctrl.countries">
+                        
+                        <td>{{country.code}}</td>
+                        <td>{{country.name}}</td>
+                        <td>{{country.continent}}</td>
+                        <td>{{country.capital}}</td>
+                        <td><a class="btn btn-info" href="#/details/"ng-click="ctrl.getAllCities(country.code)">Details</a></td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
